@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+    <title>Node Authentication</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <style>
+        
+body {
+  font-family: 'Lato', sans-serif;
+  color: #4A4A4A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  width: 350px;
+  position: relative;
+  margin-left: 300px;
+  margin-top: 30px;
+}
+form .form-field::before {
+  font-size: 20px;
+  position: absolute;
+  left: 15px;
+  top: 17px;
+  color: #888888;
+  content: " ";
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+form .form-field:nth-child(1)::before {
+  background-image: url(img/user-icon.png);
+  width: 20px;
+  height: 20px;
+  top: 15px;
+}
+form .form-field:nth-child(2)::before {
+  background-image: url(img/lock-icon.png);
+  width: 16px;
+  height: 16px;
+}
+form .form-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+form input {
+  font-family: inherit;
+  width: 100%;
+  outline: none;
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  display: block;
+  padding: 0.9rem 0.7rem;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 17px;
+  color: #4A4A4A;
+  text-indent: 40px;
+}
+form .btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0.9rem 2.5rem;
+  text-align: center;
+  background-color: #47AB11;
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 17px;
+}
+.align{
+	padding-left: 50px;
+	
+}
+.flex{
+	display: flex;
+	margin-left: 30px;
+}
+#reg{
+	margin-left: 30px;
+}
+
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div class="jumbotron text-center">
+
+        <p>Login or Register with:</p>
+        	<div id="bg"></div>
+
+<form>
+ <div class="align"> <div class="form-field">
+    <input type="email" placeholder="Email / Username" required/>
+  </div>
+  
+  <div class="form-field">
+    <input type="password" placeholder="Password" required/></div>
+  
+  <div class="flex"><div class="form-field">
+    <button class="btn" type="submit">Log in</button>
+  </div>
+  <div class="form-field" id="reg">
+    <button class="btn" type="submit">Register</button>
+  </div></div>
+</div>
+</form>
+
+        <a href="/google"> <img style="display: block;-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;width: 200px;" src="https://i.imgur.com/2dywpzc.png"></a>
+
+    </div>
+
+</div>
+</body>
+</html>   
